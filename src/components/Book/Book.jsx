@@ -10,7 +10,7 @@ const Book = (props) => {
     await publicRequest
       .delete(`/books/${_id}`)
       .then((res) => res.data)
-      .then(() => window.location.reload() && navigate("/books"));
+      .then(() => window.location.reload() && navigate("/"));
   };
   return (
     <div className="card">
